@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "guia4v1", "guia4v1\guia4v1.vbproj", "{BC615B34-D80D-4149-95FA-D1A4B21C5268}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC615B34-D80D-4149-95FA-D1A4B21C5268}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC615B34-D80D-4149-95FA-D1A4B21C5268}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC615B34-D80D-4149-95FA-D1A4B21C5268}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC615B34-D80D-4149-95FA-D1A4B21C5268}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F2D7D85C-257F-489A-8E72-B6D0392B4C84}
+	EndGlobalSection
+EndGlobal

@@ -25,7 +25,26 @@ Module Program
                     inicio = inicio + 1
                 End While
                 Console.WriteLine()
+            ElseIf respuesta = 3 Then
+                Dim numGenerado As Int16 = New Random().Next(11)
+                Dim num As Integer
+                Do Until num = numGenerado
+                    While True
+                        Console.WriteLine("" + vbCrLf + "!Prueba suerte e intenta si puedes adivinar el número entre <0-10>¡ :")
+                        num = Console.ReadLine()
+                        If num < 0 Or num > 10 Then
+                            Console.WriteLine("" + vbCrLf + "ERROR. Opción invalida, número fuera de rango. intentalo de nuevo")
+                        Else Exit While
+                        End If
+                    End While
+                    If num <> numGenerado Then
+                        Console.WriteLine("" + vbCrLf + "SORRY PERDISTE :C , sigue intentando.")
+                    Else
+                        Console.WriteLine("" + vbCrLf + "!!!YEAHH!!! :D ganaste." + vbCrLf + "")
+                    End If
+                Loop
             End If
+
         End While
     End Sub
 End Module

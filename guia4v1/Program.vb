@@ -43,8 +43,27 @@ Module Program
                         Console.WriteLine("" + vbCrLf + "!!!YEAHH!!! :D ganaste." + vbCrLf + "")
                     End If
                 Loop
+            ElseIf respuesta = 4 Then
+                Dim numero As Integer
+                While True
+                    Console.WriteLine("" + vbCrLf + "Ingrese un número positivo y te mostraremos el factorial: ")
+                    numero = Console.ReadLine()
+                    If numero <= 0 Then
+                        Console.WriteLine("" + vbCrLf + "ERROR. El número ingresado es <0> o es negativo. Vuelve a intentarlo.")
+                    Else
+                        Exit While
+                    End If
+                End While
+                Dim i As Integer = 2
+                Dim total As Integer = 1
+                For numero = i To numero
+                    total = i * total
+                    Console.WriteLine("" + vbCrLf + $" El proceso es :{total}")
+                    i = i + 1
+                Next
+                Console.WriteLine("" + vbCrLf + $" El factorial de {numero - 1 } es: {total}")
+                Console.WriteLine()
             End If
-
         End While
     End Sub
 End Module

@@ -63,6 +63,21 @@ Module Program
                 Next
                 Console.WriteLine("" + vbCrLf + $" El factorial de {numero - 1 } es: {total}")
                 Console.WriteLine()
+            ElseIf respuesta = 5 Then
+                Console.WriteLine("" + vbCrLf + "Ingrese un número positivo para ver la tabla de multiplicar: ")
+                Dim numero As Integer = Console.ReadLine()
+                Dim num As Integer = numero
+                Dim i As Integer = 1
+                Dim total As Integer = 1
+                Console.WriteLine()
+                For numero = 1 To 10
+                    total = num * i
+                    Console.WriteLine(total)
+                    i = i + 1
+                Next
+                Console.WriteLine()
+            ElseIf respuesta = 6 Then
+
             End If
         End While
     End Sub

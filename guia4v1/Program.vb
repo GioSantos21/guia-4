@@ -77,7 +77,20 @@ Module Program
                 Next
                 Console.WriteLine()
             ElseIf respuesta = 6 Then
-
+                Console.WriteLine("" + vbCrLf + "Escriba una frase o palabra: ")
+                Dim palabra As String = Console.ReadLine()
+                Console.WriteLine()
+                For index = 0 To palabra.Length() - 1
+                    Console.Write(palabra.Reverse(index))
+                Next
+                Console.WriteLine()
+                Console.WriteLine()
+            ElseIf respuesta = 7 Then
+                Dim cuates() As String = {"Gerardo", "Glenda", "Luna", "Fran", "Molina"}
+                Console.WriteLine("Los mejores programadores de POO :D " + vbCrLf + "")
+                For Each nombres As String In cuates
+                    Console.WriteLine(nombres + vbCrLf + "")
+                Next
             End If
         End While
     End Sub
